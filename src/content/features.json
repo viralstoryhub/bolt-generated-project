@@ -1,0 +1,21 @@
+{
+  "title": "Key Features",
+  "description": "Discover what makes BTFD Coin unique and valuable for our community",
+  "items": [
+    {
+      "title": "P2E Gaming",
+      "description": "Earn rewards while playing our exciting blockchain-based games",
+      "icon": "FaGamepad"
+    },
+    {
+      "title": "Staking Rewards",
+      "description": "Stake your tokens and earn passive income with competitive APY",
+      "icon": "FaCoins"
+    },
+    {
+      "title": "Community Driven",
+      "description": "Join our active community and help shape the future of BTFD",
+      "icon": "FaUsers"
+    }
+  ]
+}

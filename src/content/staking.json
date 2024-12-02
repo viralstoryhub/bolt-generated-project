@@ -1,0 +1,21 @@
+{
+  "title": "Staking Rewards",
+  "description": "Earn passive income by staking your BTFD tokens",
+  "plans": [
+    {
+      "title": "Flexible Staking",
+      "apy": "12%",
+      "duration": "No lock-up period"
+    },
+    {
+      "title": "Locked Staking",
+      "apy": "24%",
+      "duration": "3 months lock-up"
+    },
+    {
+      "title": "Premium Staking",
+      "apy": "36%",
+      "duration": "6 months lock-up"
+    }
+  ]
+}
