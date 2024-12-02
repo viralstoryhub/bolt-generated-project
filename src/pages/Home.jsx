@@ -9,33 +9,36 @@ import Presale from '../sections/Presale'
 
 const Home = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="relative">
       <section id="home">
         <Hero />
       </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="features">
-        <Features />
-      </section>
-      <section id="game">
-        <Game />
-      </section>
-      <section id="staking">
-        <Staking />
-      </section>
-      <section id="community">
-        <Community />
-      </section>
-      <section id="presale">
-        <Presale />
-      </section>
-    </motion.div>
+      
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <section id="about" className="relative z-10">
+          <About />
+        </section>
+        <section id="features" className="relative z-10">
+          <Features />
+        </section>
+        <section id="game" className="relative z-10">
+          <Game />
+        </section>
+        <section id="staking" className="relative z-10">
+          <Staking />
+        </section>
+        <section id="community" className="relative z-10">
+          <Community />
+        </section>
+        <section id="presale" className="relative z-10">
+          <Presale />
+        </section>
+      </motion.div>
+    </div>
   )
 }
 
