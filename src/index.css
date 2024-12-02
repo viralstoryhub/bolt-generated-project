@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ffd700;
+  --secondary: #000000;
+  --accent: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary), #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
