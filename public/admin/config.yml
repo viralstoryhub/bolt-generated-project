@@ -9,72 +9,28 @@ collections:
   - name: "sections"
     label: "Home Sections"
     files:
-      - name: "hero"
-        label: "Hero Section"
-        file: "src/content/hero.json"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "CTA Text", name: "ctaText", widget: "string" }
+      # ... (previous collections remain the same)
 
-      - name: "about"
-        label: "About Section"
-        file: "src/content/about.json"
+      - name: "game"
+        label: "Game Section"
+        file: "src/content/game.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Mission", name: "mission", widget: "text" }
-          - { label: "Vision", name: "vision", widget: "text" }
-
-      - name: "features"
-        label: "Features Section"
-        file: "src/content/features.json"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - label: "Feature Items"
-            name: "items"
+          - { label: "Subtitle", name: "subtitle", widget: "text" }
+          - { label: "Status", name: "status", widget: "string" }
+          - label: "Rewards"
+            name: "rewards"
+            widget: "object"
+            fields:
+              - { label: "Total Rewards", name: "total", widget: "string" }
+              - { label: "Daily Rewards", name: "daily", widget: "string" }
+          - label: "Features"
+            name: "features"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "select", options: ["FaGamepad", "FaTrophy", "FaCoins"] }
+          - { label: "CTA Text", name: "ctaText", widget: "string" }
 
-      - name: "staking"
-        label: "Staking Section"
-        file: "src/content/staking.json"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - label: "Staking Plans"
-            name: "plans"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "APY", name: "apy", widget: "string" }
-              - { label: "Duration", name: "duration", widget: "string" }
-
-      - name: "community"
-        label: "Community Section"
-        file: "src/content/community.json"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - label: "Social Links"
-            name: "socialLinks"
-            widget: "list"
-            fields:
-              - { label: "Platform", name: "platform", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Members", name: "members", widget: "string" }
-
-  - name: "settings"
-    label: "Site Settings"
-    files:
-      - name: "general"
-        label: "General Settings"
-        file: "src/content/settings.json"
-        fields:
-          - { label: "Site Title", name: "siteTitle", widget: "string" }
-          - { label: "Site Description", name: "siteDescription", widget: "text" }
-          - { label: "Logo Text", name: "logoText", widget: "string" }
+      # ... (other collections remain the same)

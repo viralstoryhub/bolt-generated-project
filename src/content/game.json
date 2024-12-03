@@ -1,0 +1,27 @@
+{
+  "title": "Play to Earn",
+  "subtitle": "Enter the world of BTFD Warriors and earn rewards while battling in our action-packed P2E game",
+  "status": "Coming Soon",
+  "rewards": {
+    "total": "500K BTFD",
+    "daily": "~200 BTFD"
+  },
+  "features": [
+    {
+      "title": "Action-Packed Gameplay",
+      "description": "Battle through multiple levels, collect coins, and avoid obstacles in this fast-paced adventure",
+      "icon": "FaGamepad"
+    },
+    {
+      "title": "Competitive Tournaments",
+      "description": "Participate in daily tournaments and compete for massive BTFD token rewards",
+      "icon": "FaTrophy"
+    },
+    {
+      "title": "Play & Earn",
+      "description": "Earn BTFD tokens for completing levels, winning tournaments, and climbing the leaderboard",
+      "icon": "FaCoins"
+    }
+  ],
+  "ctaText": "Play Now"
+}

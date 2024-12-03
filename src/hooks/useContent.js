@@ -12,6 +12,7 @@ const useContent = (contentType) => {
         setContent(data.default)
         setLoading(false)
       } catch (err) {
+        console.error(`Error loading content for ${contentType}:`, err)
         setError(err)
         setLoading(false)
       }
