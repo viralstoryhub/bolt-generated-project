@@ -10,12 +10,12 @@ const ParticlesBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute inset-0 -z-10"
+      className="absolute inset-0"
       init={particlesInit}
       options={{
         fullScreen: {
           enable: false,
-          zIndex: -10
+          zIndex: -1
         },
         background: {
           color: {

@@ -57,30 +57,8 @@ const Hero = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* Floating Coins Animation */}
-          <motion.div
-            animate={{
-              y: [0, -10, 0],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          >
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-primary rounded-full opacity-75" />
-              <div className="w-2 h-2 bg-primary rounded-full" />
-              <div className="w-2 h-2 bg-primary rounded-full opacity-75" />
-            </div>
-          </motion.div>
         </motion.div>
       </div>
-
-      {/* Animated Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-radial from-primary/20 via-transparent to-transparent animate-pulse" />
     </div>
   )
 }

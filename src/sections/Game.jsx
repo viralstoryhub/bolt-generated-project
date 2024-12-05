@@ -1,18 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaGamepad, FaTrophy, FaCoins } from 'react-icons/fa'
-import useContent from '../hooks/useContent'
-
-const iconMap = {
-  FaGamepad,
-  FaTrophy,
-  FaCoins
-}
 
 const Game = () => {
-  const { content, loading } = useContent('game')
-
-  if (loading || !content) return null
-
   return (
     <div className="py-20 relative overflow-hidden">
       {/* Background gradient */}
@@ -26,10 +15,10 @@ const Game = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="gradient-text">{content.title}</span>
+            <span className="gradient-text">Play to Earn</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            {content.subtitle}
+            Enter the world of BTFD Warriors and earn rewards while battling in our action-packed P2E game
           </p>
         </motion.div>
 
@@ -103,7 +92,7 @@ const Game = () => {
               {/* Coming Soon Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/70">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-primary mb-2">{content.status}</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">Coming Soon</h3>
                   <p className="text-gray-400">Get ready for the ultimate P2E experience</p>
                 </div>
               </div>
@@ -114,12 +103,12 @@ const Game = () => {
               <div className="bg-black/50 backdrop-blur-sm p-4 rounded-xl border border-primary/20">
                 <FaTrophy className="text-primary mb-2" />
                 <div className="text-sm text-gray-400">Total Rewards</div>
-                <div className="text-xl font-bold text-primary">{content.rewards.total}</div>
+                <div className="text-xl font-bold text-primary">500K BTFD</div>
               </div>
               <div className="bg-black/50 backdrop-blur-sm p-4 rounded-xl border border-primary/20">
                 <FaCoins className="text-primary mb-2" />
                 <div className="text-sm text-gray-400">Daily Earnings</div>
-                <div className="text-xl font-bold text-primary">{content.rewards.daily}</div>
+                <div className="text-xl font-bold text-primary">~200 BTFD</div>
               </div>
             </div>
           </motion.div>
@@ -134,26 +123,39 @@ const Game = () => {
             <h3 className="text-2xl font-bold mb-6">Game Features</h3>
             
             <div className="space-y-6">
-              {content.features.map((feature, index) => {
-                const IconComponent = iconMap[feature.icon]
-                return (
-                  <motion.div
-                    key={index}
-                    whileHover={{ x: 10 }}
-                    className="flex items-start space-x-4 bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-primary/20"
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <IconComponent className="text-primary text-xl" />
-                      </div>
+              {[
+                {
+                  title: "Action-Packed Gameplay",
+                  description: "Battle through multiple levels, collect coins, and avoid obstacles in this fast-paced adventure",
+                  icon: FaGamepad
+                },
+                {
+                  title: "Competitive Tournaments",
+                  description: "Participate in daily tournaments and compete for massive BTFD token rewards",
+                  icon: FaTrophy
+                },
+                {
+                  title: "Play & Earn",
+                  description: "Earn BTFD tokens for completing levels, winning tournaments, and climbing the leaderboard",
+                  icon: FaCoins
+                }
+              ].map((feature, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ x: 10 }}
+                  className="flex items-start space-x-4 bg-black/50 backdrop-blur-sm p-6 rounded-xl border border-primary/20"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                      <feature.icon className="text-primary text-xl" />
                     </div>
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-                      <p className="text-gray-400">{feature.description}</p>
-                    </div>
-                  </motion.div>
-                )
-              })}
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
+                    <p className="text-gray-400">{feature.description}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
 
             <div className="flex justify-center">
@@ -162,7 +164,7 @@ const Game = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-primary text-black rounded-xl font-semibold hover:bg-primary/80 transition-colors"
               >
-                {content.ctaText}
+                Play Now
               </motion.button>
             </div>
           </motion.div>

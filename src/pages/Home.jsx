@@ -5,6 +5,8 @@ import Features from '../sections/Features'
 import Game from '../sections/Game'
 import Staking from '../sections/Staking'
 import Community from '../sections/Community'
+import Whitepaper from '../sections/Whitepaper'
+import Roadmap from '../sections/Roadmap'
 import Presale from '../sections/Presale'
 
 const Home = () => {
@@ -30,6 +32,12 @@ const Home = () => {
         </section>
         <section id="staking" className="relative z-10">
           <Staking />
+        </section>
+        <section id="whitepaper" className="relative z-10">
+          <Whitepaper />
+        </section>
+        <section id="roadmap" className="relative z-10">
+          <Roadmap />
         </section>
         <section id="community" className="relative z-10">
           <Community />
