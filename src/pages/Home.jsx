@@ -1,50 +1,22 @@
 import { motion } from 'framer-motion'
-import Hero from '../sections/Hero'
-import About from '../sections/About'
-import Features from '../sections/Features'
-import Game from '../sections/Game'
-import Staking from '../sections/Staking'
-import Community from '../sections/Community'
-import Whitepaper from '../sections/Whitepaper'
-import Roadmap from '../sections/Roadmap'
-import Presale from '../sections/Presale'
 
-const Home = () => {
+function Home() {
   return (
-    <div className="relative">
-      <section id="home">
-        <Hero />
-      </section>
-      
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-center"
       >
-        <section id="about" className="relative z-10">
-          <About />
-        </section>
-        <section id="features" className="relative z-10">
-          <Features />
-        </section>
-        <section id="game" className="relative z-10">
-          <Game />
-        </section>
-        <section id="staking" className="relative z-10">
-          <Staking />
-        </section>
-        <section id="whitepaper" className="relative z-10">
-          <Whitepaper />
-        </section>
-        <section id="roadmap" className="relative z-10">
-          <Roadmap />
-        </section>
-        <section id="community" className="relative z-10">
-          <Community />
-        </section>
-        <section id="presale" className="relative z-10">
-          <Presale />
-        </section>
+        <h1 className="text-4xl md:text-6xl font-bold text-[#FF4D4D] mb-6">
+          Spread the Love with ValenRizz!
+        </h1>
+        <p className="text-xl mb-8 max-w-2xl mx-auto">
+          Join the crypto love story! ValenRizz (VRZ) is the Valentine's Day meme coin that brings love, laughter, and crypto together.
+        </p>
+        <button className="bg-[#FF4D4D] text-white px-8 py-3 rounded-full text-lg hover:bg-[#FF85B3] transition-colors">
+          Buy VRZ Now
+        </button>
       </motion.div>
     </div>
   )
