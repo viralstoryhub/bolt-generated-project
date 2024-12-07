@@ -36,36 +36,10 @@ export default function AnimatedHero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="inline-block mb-4"
+          className="inline-block mb-6"
         >
           <div className="bg-white/10 backdrop-blur-lg rounded-full px-6 py-2 text-[#FF4D4D] font-medium">
             🚀 Welcome to the Future of Love & Crypto
-          </div>
-        </motion.div>
-
-        {/* Valentine Message */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-6"
-        >
-          <div className="relative inline-block">
-            <motion.div
-              animate={{
-                scale: [1, 1.1, 1],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="bg-white/30 backdrop-blur-sm px-8 py-3 rounded-full border-2 border-[#FF4D4D]"
-            >
-              <span className="text-[#FF4D4D] font-medium">
-                This Valentine with Steph 💝
-              </span>
-            </motion.div>
           </div>
         </motion.div>
 
@@ -73,7 +47,7 @@ export default function AnimatedHero() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#FF4D4D] to-[#FF85B3] text-transparent bg-clip-text"
         >
           Spread the Love with ValenRizz!
@@ -83,7 +57,7 @@ export default function AnimatedHero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.4 }}
           className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-600"
         >
           Join the crypto love story! ValenRizz (VRZ) is the Valentine's Day meme coin that brings love, laughter, and crypto together.
@@ -93,7 +67,7 @@ export default function AnimatedHero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.6 }}
           className="space-x-4"
         >
           <button className="bg-gradient-to-r from-[#FF4D4D] to-[#FF85B3] text-white px-8 py-4 rounded-full text-lg hover:opacity-90 transition-opacity shadow-lg">
@@ -108,7 +82,7 @@ export default function AnimatedHero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-16"
         >
           {[
