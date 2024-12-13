@@ -26,11 +26,14 @@ export default function Header() {
             <a href="#ai-tools" className="text-gray-300 hover:text-white transition">
               AI Tools
             </a>
-            <a href="#exchange" className="text-gray-300 hover:text-white transition">
-              Exchange
+            <a href="#solaiyra-platform" className="text-gray-300 hover:text-white transition">
+              SolAIra Platform
             </a>
             <a href="#roadmap" className="text-gray-300 hover:text-white transition">
               Roadmap
+            </a>
+            <a href="#blog" className="text-gray-300 hover:text-white transition">
+              Blog
             </a>
           </nav>
 
@@ -66,16 +69,22 @@ export default function Header() {
                 AI Tools
               </a>
               <a
-                href="#exchange"
+                href="#solaiyra-platform"
                 className="block px-3 py-2 text-gray-300 hover:text-white transition"
               >
-                Exchange
+                SolAIra Platform
               </a>
               <a
                 href="#roadmap"
                 className="block px-3 py-2 text-gray-300 hover:text-white transition"
               >
                 Roadmap
+              </a>
+              <a
+                href="#blog"
+                className="block px-3 py-2 text-gray-300 hover:text-white transition"
+              >
+                Blog
               </a>
               <div className="pt-4">
                 <button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">

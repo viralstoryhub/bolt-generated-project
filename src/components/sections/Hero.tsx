@@ -142,24 +142,24 @@ export default function Hero() {
 
           {/* Pre-sale Timer */}
           <div className="mt-20 w-full flex justify-center">
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-8 rounded-lg border border-blue-500/20 max-w-lg">
-              <h3 className="text-xl text-white mb-4 text-center">Pre-sale Starts In:</h3>
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-6 sm:p-8 rounded-lg border border-blue-500/20 w-full max-w-2xl">
+              <h3 className="text-xl sm:text-2xl text-white mb-4 text-center">Pre-sale Starts In:</h3>
               <div className="grid grid-cols-4 gap-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400">{timeLeft.days}</div>
-                  <div className="text-gray-400 text-sm">Days</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-400">{timeLeft.days}</div>
+                  <div className="text-gray-400 text-sm sm:text-base">Days</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400">{timeLeft.hours}</div>
-                  <div className="text-gray-400 text-sm">Hours</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-400">{timeLeft.hours}</div>
+                  <div className="text-gray-400 text-sm sm:text-base">Hours</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400">{timeLeft.minutes}</div>
-                  <div className="text-gray-400 text-sm">Minutes</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-400">{timeLeft.minutes}</div>
+                  <div className="text-gray-400 text-sm sm:text-base">Minutes</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400">{timeLeft.seconds}</div>
-                  <div className="text-gray-400 text-sm">Seconds</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-400">{timeLeft.seconds}</div>
+                  <div className="text-gray-400 text-sm sm:text-base">Seconds</div>
                 </div>
               </div>
             </div>

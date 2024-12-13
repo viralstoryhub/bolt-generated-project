@@ -11,6 +11,7 @@ import CryptoCard from './components/sections/CryptoCard';
 import Footer from './components/layout/Footer';
 import TrustedBy from './components/sections/TrustedBy';
 import SolAIraPlatform from './components/sections/SolAIraPlatform';
+import Blog from './components/sections/Blog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SolAIraPlatform />
       <AITradingBot />
       <Roadmap />
+      <Blog />
       <RugPullDetection />
       <Features />
       <Community />
