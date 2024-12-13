@@ -68,7 +68,7 @@ export default function TrustedBy() {
             ))}
             {/* Duplicate the logos to create an infinite loop effect */}
             {companies.map((company, index) => (
-              <div key={index} className="marquee-item">
+              <div key={index + companies.length} className="marquee-item">
                 <img
                   src={company.logo}
                   alt={company.name}
