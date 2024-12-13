@@ -13,7 +13,7 @@ export default function Header() {
             <a href="/" className="text-white text-2xl font-bold flex items-center gap-2">
               <Cpu className="w-8 h-8 text-blue-500" />
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-                SOLAIRA
+                SolAIra
               </span>
             </a>
           </div>
@@ -35,12 +35,9 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="#" // Replace with your pre-sale link
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
-            >
-              PRE SALE
-            </a>
+            <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-lg hover:opacity-90 transition">
+              Get Started
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -81,12 +78,9 @@ export default function Header() {
                 Roadmap
               </a>
               <div className="pt-4">
-                <a
-                  href="#" // Replace with your pre-sale link
-                  className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition block text-center"
-                >
-                  PRE SALE
-                </a>
+                <button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+                  Get Started
+                </button>
               </div>
             </div>
           </div>

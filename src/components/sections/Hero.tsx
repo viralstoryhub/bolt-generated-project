@@ -62,15 +62,8 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen flex items-start overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://techcrunch.com/wp-content/uploads/2021/11/Banner-12_2.jpg"
-          alt="Crypto background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-gray-900" />
-      </div>
+      {/* Background and overlay */}
+      <div className="absolute inset-0 z-0 bg-black" />
 
       {/* Main content container */}
       <div className="relative w-full pt-32 lg:pt-40 z-10">
