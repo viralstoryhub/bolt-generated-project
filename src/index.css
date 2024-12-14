@@ -4,6 +4,8 @@
 
 body {
   @apply bg-black text-white;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 html {
@@ -71,4 +73,15 @@ html {
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
+}
+
+/* Styles for the TestPage visualization */
+#networkCanvas {
+  
+}
+
+.test-page-container {
+  @apply flex justify-center items-center;
+  width: 100%; /* Ensure container takes full width */
+  height: 100vh; /* Ensure container takes full height */
 }

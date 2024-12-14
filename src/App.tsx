@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import PlatformOverview from './components/sections/PlatformOverview';
@@ -15,21 +16,29 @@ import Blog from './components/sections/Blog';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black">
-      <Header />
-      <Hero />
-      <PlatformOverview />
-      <TrustedBy />
-      <SolAIraPlatform />
-      <AITradingBot />
-      <Roadmap />
-      <Blog />
-      <RugPullDetection />
-      <Features />
-      <Community />
-      <CryptoCard />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-black">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <PlatformOverview />
+              <TrustedBy />
+              <SolAIraPlatform />
+              <AITradingBot />
+              <Roadmap />
+              <Blog />
+              <RugPullDetection />
+              <Features />
+              <Community />
+              <CryptoCard />
+            </>
+          } />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

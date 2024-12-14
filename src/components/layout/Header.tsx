@@ -1,6 +1,7 @@
 import React from 'react';
-import { Menu, X, Cpu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +11,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <a href="/" className="text-white text-2xl font-bold flex items-center gap-2">
-              <Cpu className="w-8 h-8 text-blue-500" />
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-                SolAIra
-              </span>
-            </a>
+            <Link to="/" className="flex items-center gap-2">
+              <img
+                src="https://i.ibb.co/YXZbbq5/logo.png"
+                alt="SolAIra Logo"
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
