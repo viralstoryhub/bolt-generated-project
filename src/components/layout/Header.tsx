@@ -12,11 +12,11 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              {/* Updated logo with new URL and size adjustments */}
+              {/* Updated logo with size adjustments */}
               <img
-                src="https://i.ibb.co/SsFQtgQ/logo.png"
+                src="https://i.postimg.cc/P5d9zSgS/logo.png"
                 alt="SolAIra Logo"
-                className="h-auto w-auto max-w-[250px] opacity-80 hover:opacity-100 transition-opacity"
+                className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
             </Link>
           </div>
