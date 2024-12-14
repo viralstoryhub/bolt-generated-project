@@ -14,7 +14,7 @@ export default function Header() {
             <Link to="/" className="flex items-center gap-2">
               {/* Updated logo image */}
               <img
-                src="https://i.ibb.co/1RXTFWh/logo.png"
+                src="https://i.ibb.co/4mSpsjX/logo.png"
                 alt="SolAIra Logo"
                 className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
