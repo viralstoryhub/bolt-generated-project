@@ -8,9 +8,14 @@ import React from 'react';
               {/* Left: Image */}
               <div className="bg-gray-800 rounded-xl p-1 shadow-2xl">
                 <img
-                  src="https://i.ibb.co/v1N4n3c/solaira-platform.png"
+                  src="https://www.dropbox.com/scl/fi/r2p3ah9wcfi5p3otxp8uh/Screenshot-2024-12-15-145244.png?rlkey=h3ugw119ku8jbtkjkx6b5fuoe&st=s4isdmd5&dl=0"
                   alt="SolAIra Platform"
                   className="w-full rounded-lg"
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
                 />
               </div>
 
