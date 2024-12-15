@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CircuitLogo from '../CircuitLogo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,12 +13,8 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              {/* Updated logo with new URL and size adjustments */}
-              <img
-                src="https://i.postimg.cc/P5d9zSgS/logo.png"
-                alt="SolAIra Logo"
-                className="h-auto w-auto max-w-[250px] opacity-80 hover:opacity-100 transition-opacity"
-              />
+              {/* Replace img with CircuitLogo component */}
+              <CircuitLogo />
             </Link>
           </div>
 

@@ -49,7 +49,7 @@ export default function PlatformOverview() {
             Experience Seamless and<br />Intelligent Trading
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto px-4 sm:px-6">
-            SolAIra Exchange is a cutting-edge cryptocurrency trading platform that leverages artificial intelligence 
+            SolaiRa Exchange is a cutting-edge cryptocurrency trading platform that leverages artificial intelligence 
             and the Solana blockchain to provide a seamless, secure, and intuitive trading experience.
           </p>
         </div>

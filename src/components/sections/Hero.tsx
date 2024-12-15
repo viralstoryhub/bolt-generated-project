@@ -52,7 +52,7 @@ export default function Hero() {
             {/* Left side content */}
             <div className="max-w-2xl">
               <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
-                Discover the Future of Crypto Trading with SolAIra
+                Discover the Future of Crypto Trading with SolaiRa
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-xl">
                 AI-powered insights, secure transactions, and smarter trading for everyone

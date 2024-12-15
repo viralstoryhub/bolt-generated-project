@@ -85,3 +85,58 @@ html {
   width: 100%; /* Ensure container takes full width */
   height: 100vh; /* Ensure container takes full height */
 }
+
+/* Styles for the Circuit Logo */
+.logo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circuit-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.brain {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #3498db;
+  margin-right: 5px;
+}
+
+.brain .wire {
+  position: absolute;
+  background-color: #3498db;
+  height: 2px;
+}
+
+.brain .wire:nth-child(1) {
+  top: 5px;
+  left: -10px;
+  width: 10px;
+}
+
+.brain .wire:nth-child(2) {
+  top: 15px;
+  left: -10px;
+  width: 10px;
+}
+
+.brain .wire:nth-child(3) {
+  top: 25px;
+  left: -10px;
+  width: 10px;
+}
+
+.solaira-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
