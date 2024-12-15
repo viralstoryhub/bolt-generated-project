@@ -8,7 +8,7 @@ import React from 'react';
               {/* Left: Image */}
               <div className="bg-gray-800 rounded-xl p-1 shadow-2xl">
                 <img
-                  src="https://i.imgur.com/0111111.png"
+                  src="https://i.ibb.co/v1N4n3c/solaira-platform.png"
                   alt="SolAIra Platform"
                   className="w-full rounded-lg"
                 />
